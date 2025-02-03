@@ -25,12 +25,10 @@ describe('LoginComponent', () => {
     const initialErrors = fixture.debugElement.queryAll(By.css('.login__error'));
     expect(initialErrors.length).toBe(0);
 
-    // Mark fields as touched to trigger validation
     usernameControl?.markAsTouched();
     passwordControl?.markAsTouched();
     fixture.detectChanges();
 
-    // Get error messages after touch
     const errorElements = fixture.debugElement.queryAll(By.css('.login__error'));
     
     expect(errorElements.length).toBe(2);
