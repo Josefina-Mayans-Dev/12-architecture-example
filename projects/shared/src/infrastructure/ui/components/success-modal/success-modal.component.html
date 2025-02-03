@@ -1,0 +1,14 @@
+@if(isVisible) {
+<div class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Success!</h2>
+        <button (click)="close()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="success-icon">✓</div>
+        <h3>{{ title() }}</h3>
+      </div>
+    </div>
+  </div>
+}
